@@ -41,8 +41,8 @@ public class AddNewMembersToChannel{
             // Part 2: send post request to add new members to channels
             HttpRequest postRequest = gReq.postRequest(requestBody);
             System.out.println(postRequest);
-            HttpResponse<String> teamResponse = client.send(postRequest, HttpResponse.BodyHandlers.ofString());
-//            showResponseStatus(teamResponse);
+            client.send(postRequest, HttpResponse.BodyHandlers.ofString());
+//          showResponseStatus(teamResponse);
         } catch (IOException | InterruptedException | IllegalArgumentException e) {
             e.printStackTrace();
         }

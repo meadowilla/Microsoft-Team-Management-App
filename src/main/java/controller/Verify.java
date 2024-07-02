@@ -79,11 +79,9 @@ public class Verify {
         				.GET()
         				.build();
 
-        		try {
-        			HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-        		} catch (IOException | InterruptedException e) {
-        			e.printStackTrace();
-        		}
+
+        		client.send(request, HttpResponse.BodyHandlers.ofString());
+
 
         		String tokenRequestBody = "client_id=" + URLEncoder.encode(validClientId, StandardCharsets.UTF_8) +
                         "&scope=https://graph.microsoft.com/.default" +
@@ -97,20 +95,14 @@ public class Verify {
         				.build();
 
         		String accessToken = "";
-        		try {
-        			HttpResponse<String> tokenResponse = client.send(tokenRequest, HttpResponse.BodyHandlers.ofString());
+        		HttpResponse<String> tokenResponse = client.send(tokenRequest, HttpResponse.BodyHandlers.ofString());
 
-        			accessToken = new JsonExtractor().extractToken(tokenResponse);
-//        			System.out.println("Access Token: " + accessToken);
+        		accessToken = new JsonExtractor().extractToken(tokenResponse);
+//        		System.out.println("Access Token: " + accessToken);
+        		owner.setAccessToken(accessToken);
 
 
-                    owner.setAccessToken(accessToken);
-
-        		} catch (IOException | InterruptedException e) {
-        			e.printStackTrace();
-        		}
-
-            } catch (IOException e) {
+            } catch (IOException | InterruptedException e) {
                 e.printStackTrace();
             }
         }

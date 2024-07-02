@@ -6,8 +6,6 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.net.http.HttpTimeoutException;
-import java.time.Duration;
-
 import javafx.concurrent.Task;
 import jakarta.json.Json;
 import jakarta.json.JsonObject;
@@ -69,7 +67,7 @@ public class SyncToAirtable extends Task<Void> {
 
 			// Sleep for the specified period, converting seconds to milliseconds
 			try {
-				Thread.sleep(period * 1000);
+				Thread.sleep(period * 1000L);
 			} catch (InterruptedException e) {
 				if (isCancelled()) {
 					break;
@@ -91,21 +89,18 @@ public class SyncToAirtable extends Task<Void> {
 
 			// PART 2: extract specific data (members/channels) and create a requestBody
 			String requestBody = "";
-			switch (gReq.getOption()) {
-				case 1:
+			if (gReq.getOption() == 1) {
 					JsonObject jsonMembers = new JsonExtractor().extractMembers(teamResponse);
 					requestBody = convertToStr(jsonMembers);
-					break;
-				case 2:
+			} else if (gReq.getOption() == 2) {
 					JsonObject jsonChannels = new JsonExtractor().extractChannels(teamResponse);
 					requestBody = convertToStr(jsonChannels);
-					break;
 			}
 
 			// PART 3: send postRequest to Airtable
 			HttpRequest postRequest = aReq.postRequest(requestBody);
 			System.out.println("Send data to Airtable ...");
-			HttpResponse<String> airtableResponse = client.send(postRequest, HttpResponse.BodyHandlers.ofString());
+			client.send(postRequest, HttpResponse.BodyHandlers.ofString());
 
 		} catch (HttpTimeoutException e) {
 			System.err.println("Request timed out: " + e.getMessage());

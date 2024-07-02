@@ -42,7 +42,6 @@ public class SyncController {
     private TextField AirtableKeyField;
 
     private SyncToAirtable syncTask;
-    private Thread syncThread;
 
     @FXML
     void BackButtonClicked(ActionEvent event) {
@@ -69,7 +68,7 @@ public class SyncController {
 
         syncTask = new SyncToAirtable(TeamID, baseID, memberTableID, channelTableID, airtableKey, period, Verify.owner);
 
-        syncThread = new Thread(syncTask);
+        Thread syncThread = new Thread(syncTask);
         syncThread.setDaemon(true);
         syncThread.start();
 

@@ -40,11 +40,9 @@ public class JsonExtractor {
         	members.add(member);
         }
         
-        JsonObject jsonMembers = Json.createObjectBuilder()
+        return Json.createObjectBuilder()
         		.add("records", members)
         		.build();
-        
-        return jsonMembers;
 	}
 	
 	public JsonObject extractChannels(HttpResponse<String> response) {
@@ -65,11 +63,9 @@ public class JsonExtractor {
         	channels.add(channel);
         }
         
-        JsonObject jsonMembers = Json.createObjectBuilder()
+        return Json.createObjectBuilder()
         		.add("records", channels)
         		.build();
-        
-        return jsonMembers;
 	}
 }
 

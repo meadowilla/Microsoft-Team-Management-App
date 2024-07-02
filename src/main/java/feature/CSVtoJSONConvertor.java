@@ -45,12 +45,9 @@ public class CSVtoJSONConvertor {
 			e.printStackTrace();
 		}
 		
-		JsonObject jsonNewMembers = Json.createObjectBuilder()
+		return Json.createObjectBuilder()
 				.add("values", jsonArrayBuilder)
 				.build();
-		
-//		System.out.println("String: " + jsonNewMembers.toString());
-		return jsonNewMembers;
 	}
 
 }

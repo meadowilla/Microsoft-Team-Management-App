@@ -24,7 +24,7 @@ public class Owner{
 				.build();
 	
 		try {
-			HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+			client.send(request, HttpResponse.BodyHandlers.ofString());
 //			System.out.println("Response Code: " + response.statusCode());
 //	        System.out.println("Response Body: " + response.body());
 		} catch (IOException | InterruptedException e) {
