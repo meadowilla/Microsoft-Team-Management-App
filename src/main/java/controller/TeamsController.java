@@ -19,7 +19,13 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class TeamsController {
+	
+	private static final Logger LOGGER = LogManager.getLogger(TeamsController.class);
+	
     @FXML
     private MenuItem ChannelsButton;
 
@@ -51,7 +57,7 @@ public class TeamsController {
                 .build();
 
         try {
-            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+            client.send(request, HttpResponse.BodyHandlers.ofString());
 //			System.out.println("Response Code: " + response.statusCode());
 //	        System.out.println("Response Body: " + response.body());
         } catch (IOException | InterruptedException e) {
@@ -149,7 +155,7 @@ public class TeamsController {
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {
-            e.printStackTrace();
+        	LOGGER.log(null, "context", e.getMessage(), e);
         }
 
     }
