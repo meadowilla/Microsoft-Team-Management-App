@@ -17,7 +17,6 @@ Microsoft Team is a popular application for colaborating, and also where your te
 
 There are several problems to be faced:
 * Ensuring specific permissions given to proper employees to do management
-<!-- Consider the order of features presented-->
 * Syncing all data about members and channels of a team to a Airtable base
 * Adding new members from a CSV file to a team
 * Adding a specific member to a private channel
