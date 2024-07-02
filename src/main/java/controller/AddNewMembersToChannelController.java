@@ -64,9 +64,5 @@ public class AddNewMembersToChannelController {
         }
     }
 
-    @FXML
-    void validateUserIDTyped(KeyEvent event) {
-
-    }
 
 }
