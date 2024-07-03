@@ -35,7 +35,7 @@ Ensure that you have created an Airtable account, then had your _Airtable API ke
 <!-- Consider the order of features presented-->
 * Verify your permission
 * Sync data to your Airtable base
-* Create a new channel (private, standard, ?)
+* Create a new channel (private, standard, shared)
 * Add new members from CSV file to a team
 * Add a specific members to a private channel
 
