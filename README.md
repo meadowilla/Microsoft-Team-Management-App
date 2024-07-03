@@ -2,7 +2,7 @@
 
 
 <!-- Create a logo/image for the app on Canva -->
-<p align="center"><img src="Logo.png" alt="Microsoft Team Management App" width="100" height="100"></p>
+<p align="center"><img src="Logo.png" alt="Microsoft Team Management App" width="250" height="250"></p>
 
 <!-- Add some buttons (License, download, version, madeby, open source, stars, issues) -->
 
