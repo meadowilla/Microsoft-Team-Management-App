@@ -1,7 +1,5 @@
 <h1 align="center">Microsoft Team Management App</h1>
 
-
-<!-- Create a logo/image for the app on Canva -->
 <p align="center"><img src="Logo.png" alt="Microsoft Team Management App" width="250" height="250"></p>
 
 <!-- Add some buttons (License, download, version, madeby, open source, stars, issues) -->
@@ -57,16 +55,14 @@ Ensure that you have created an Airtable account, then had your _Airtable API ke
 <p><img src="UML\Total UseCase.png" alt="Usecase Diagram" ></p>
 
 * Class Diagram
-<p><img src="UML\Total Class.png" alt="Usecase Diagram"></p>
-<p><img src="UML\Request Classes.png" alt="Usecase Diagram"></p>
-<p><img src="UML\Feature Classes.png" alt="Usecase Diagram"></p>
+<p><img src="UML\Package Dependency.png" alt="Package Dependency"></p>
+<p><img src="UML\Entity Classes.png" alt="Entity Classes"></p>
+<p><img src="UML\Request Classes.png" alt="Request Classes"></p>
+<p><img src="UML\Feature Classes.png" alt="Feature Classes"></p>
+<p><img src="UML\Controller Classes.png" alt="Controller Classes"></p>
 
-### Deploying on SonarQube
-
-### Testing on Jenskins
-
-### Publishing on GitHub
-
+### Deploying with Jenkins and testing with SonarQube
+  Bugs and code smells are represented in our report (Project I.pdf)
 ## Build
 Clone the repo and then run Main.java
 ## License
