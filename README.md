@@ -32,48 +32,22 @@ Ensure that you have created an Airtable account, then had your _Airtable API ke
 ### Demo Videos
 <!-- Consider the order of features presented-->
 * Verify your permission
-  https://drive.google.com/file/d/1Wm5YyiczN_0T-9RdwApyqHpPA5j68QJC/view?usp=drive_link
+https://github.com/meadowilla/Microsoft-Team-Management-App/assets/130919290/093e020e-5430-4cd4-9488-d1e291379b87
 * Sync data to your Airtable base
-  https://drive.google.com/file/d/1EtszE2GiNrKWy8YDTQYE0YR2kd1dg3Ow/view?usp=drive_link
+https://github.com/meadowilla/Microsoft-Team-Management-App/assets/130919290/a4873ec8-0d97-4c59-a992-3f3032387cc7
 * Create a new channel (private, standard, shared)
-  https://drive.google.com/file/d/1brVFuH6Sv1H5JzDeRPVaVewYpwFpasFH/view?usp=drive_link
+https://github.com/meadowilla/Microsoft-Team-Management-App/assets/130919290/ec85f346-afa1-43a3-acf3-4f42f3e57ae7
 * Add new members from CSV file to a team
-  https://drive.google.com/file/d/1v74w72FvsqOKvmeAf47N536kVI_WDlqa/view?usp=drive_link
+https://github.com/meadowilla/Microsoft-Team-Management-App/assets/130919290/94c9821d-62b4-48bb-80e7-a44b41a0f450
 * Add a specific members to a private channel
-  https://drive.google.com/file/d/1-06vIt9X7PfFi0Ar99GjmBPspiVO1ysP/view?usp=drive_link
+https://github.com/meadowilla/Microsoft-Team-Management-App/assets/130919290/05a8237b-ed29-47e6-91d8-144704d78049
+
 ## Technologies Used
 ### APIs
 * **Microsoft Graph, Access Token, Azure App Permissions and Secrets**
   
   Our management application interacts with Microsoft Team through **Microsoft Graph**. 
   
-  To call Graph API, our app must obtain an **access token** from the Microsoft identity platform. This access token includes information about whether the app is authorized to access Microsoft Graph with its own identity. With the aim of authorizing our app, we create an Azure app with **proper permisions**, including _Channel.Create_, _ChannelMember.ReadWrite.All_, _TeamMember.ReadWrite.All_, _TeamMember.Read.All_, to allow creating channels, updating members and retrieving information. 
-  
-  Therefore, our appilication would ask onwers to provide the **Azure app's secrets** to get proper access token before allowing them to use its service.
-
-* **Airtable API**: 
-  We utilize Airtable to store information about members and channels retrieved from Microsoft Teams. This is facilitated by the **Airtable API**, a powerful and flexible tool that enables us to interact programmatically with Airtable bases.
-
-### Java Programming
-* Usecase Diagram
-<p><img src="UML\Total UseCase.png" alt="Usecase Diagram" ></p>
-
-* Class Diagram
-<p><img src="UML\Package Dependency.png" alt="Package Dependency"></p>
-<p><img src="UML\Entity Classes.png" alt="Entity Classes"></p>
-<p><img src="UML\Request Classes.png" alt="Request Classes"></p>
-<p><img src="UML\Feature Classes.png" alt="Feature Classes"></p>
-<p><img src="UML\Controller Classes.png" alt="Controller Classes"></p>
-
-### Deploying with Jenkins and testing with SonarQube
-  Bugs and code smells are represented in our report (Project I.pdf)
-## Build
-Clone the repo and then run Main.java
-## License
-
-## Contact
-This project is maintained by 2 moderators:
-- NguyenTT - [@meadowilla](https://github.com/meadowilla/) - nguyen.tt220067@sis.hust.edu.vn/nguyen8a1yp@gmail.com
-- HaPT - [@hanny](https://github.com/pth0301/) - ha.pt225571@sis.hust.edu.vn/haphan???@gmail.com
+  To call Graph API, our app must obtain an **access token** from the Microsoft identity platform. This access token includes information about whether the app is authorized to access Microsoft Graph with its own identity. With the aim of authorizing our app, we create an Azure app with **proper permisions**, including _Chatp685032@gmail.com
 
 
