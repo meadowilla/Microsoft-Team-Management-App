@@ -30,16 +30,25 @@ Ensure that you have the _tenantId_ of your organization and the proper permissi
 Ensure that you have created an Airtable account, then had your _Airtable API key_ and have created a base (_baseId_) and tables (_tableId_).
 
 ### Demo Videos
-<!-- Consider the order of features presented-->
+
 * Verify your permission
-https://github.com/meadowilla/Microsoft-Team-Management-App/assets/130919290/093e020e-5430-4cd4-9488-d1e291379b87
+
+https://github.com/meadowilla/Microsoft-Team-Management-App/assets/130919290/200167e8-85c7-475b-b261-5f207872ac21
+
 * Sync data to your Airtable base
+  
 https://github.com/meadowilla/Microsoft-Team-Management-App/assets/130919290/a4873ec8-0d97-4c59-a992-3f3032387cc7
+
 * Create a new channel (private, standard, shared)
+  
 https://github.com/meadowilla/Microsoft-Team-Management-App/assets/130919290/ec85f346-afa1-43a3-acf3-4f42f3e57ae7
+
 * Add new members from CSV file to a team
+  
 https://github.com/meadowilla/Microsoft-Team-Management-App/assets/130919290/94c9821d-62b4-48bb-80e7-a44b41a0f450
+
 * Add a specific members to a private channel
+  
 https://github.com/meadowilla/Microsoft-Team-Management-App/assets/130919290/05a8237b-ed29-47e6-91d8-144704d78049
 
 ## Technologies Used
