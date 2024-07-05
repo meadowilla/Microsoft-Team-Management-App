@@ -5,7 +5,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpRequest.BodyPublisher;
 import java.net.http.HttpRequest.BodyPublishers;
 
-public class AirtableAPIRequest extends Request{
+public class AirtableAPIRequest implements Request{
 	
 	private String BASE_ID; 
 	private String TABLE_ID;
