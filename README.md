@@ -57,6 +57,31 @@ https://github.com/meadowilla/Microsoft-Team-Management-App/assets/130919290/05a
   
   Our management application interacts with Microsoft Team through **Microsoft Graph**. 
   
-  To call Graph API, our app must obtain an **access token** from the Microsoft identity platform. This access token includes information about whether the app is authorized to access Microsoft Graph with its own identity. With the aim of authorizing our app, we create an Azure app with **proper permisions**, including _Chatp685032@gmail.com
+  To call Graph API, our app must obtain an **access token** from the Microsoft identity platform. This access token includes information about whether the app is authorized to access Microsoft Graph with its own identity. With the aim of authorizing our app, we create an Azure app with **proper permisions**, including _Channel.Create_, _ChannelMember.ReadWrite.All_, _TeamMember.ReadWrite.All_, _TeamMember.Read.All_, to allow creating channels, updating members and retrieving information. 
+  
+  Therefore, our appilication would ask onwers to provide the **Azure app's secrets** to get proper access token before allowing them to use its service.
 
+* **Airtable API**: 
+  We utilize Airtable to store information about members and channels retrieved from Microsoft Teams. This is facilitated by the **Airtable API**, a powerful and flexible tool that enables us to interact programmatically with Airtable bases.
 
+### Java Programming
+* Usecase Diagram
+<p><img src="UML\Total UseCase.png" alt="Usecase Diagram" ></p>
+
+* Class Diagram
+<p><img src="UML\Package Dependency.png" alt="Package Dependency"></p>
+<p><img src="UML\Entity Classes.png" alt="Entity Classes"></p>
+<p><img src="UML\Request Classes.png" alt="Request Classes"></p>
+<p><img src="UML\Feature Classes.png" alt="Feature Classes"></p>
+<p><img src="UML\Controller Classes.png" alt="Controller Classes"></p>
+
+### Deploying with Jenkins and testing with SonarQube
+  Bugs and code smells are represented in our report (Project I.pdf)
+## Build
+Clone the repo and then run Main.java
+## License
+
+## Contact
+This project is maintained by 2 moderators:
+- NguyenTT - [@meadowilla](https://github.com/meadowilla/) - nguyen.tt220067@sis.hust.edu.vn/nguyen8a1yp@gmail.com
+- HaPT - [@hanny](https://github.com/pth0301/) - ha.pt225571@sis.hust.edu.vn/tp685032tp685032@gmail.com
