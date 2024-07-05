@@ -1,6 +1,6 @@
 <h1 align="center">Microsoft Team Management App</h1>
 
-<p align="center"><img src="Logo.png" alt="Microsoft Team Management App" width="250" height="250"></p>
+<p align="center"><img src="src\main\resources\images\Logo.png" alt="Microsoft Team Management App" width="250" height="250"></p>
 
 <!-- Add some buttons (License, download, version, madeby, open source, stars, issues) -->
 
@@ -32,11 +32,15 @@ Ensure that you have created an Airtable account, then had your _Airtable API ke
 ### Demo Videos
 <!-- Consider the order of features presented-->
 * Verify your permission
+  https://drive.google.com/file/d/1Wm5YyiczN_0T-9RdwApyqHpPA5j68QJC/view?usp=drive_link
 * Sync data to your Airtable base
+  https://drive.google.com/file/d/1EtszE2GiNrKWy8YDTQYE0YR2kd1dg3Ow/view?usp=drive_link
 * Create a new channel (private, standard, shared)
+  https://drive.google.com/file/d/1brVFuH6Sv1H5JzDeRPVaVewYpwFpasFH/view?usp=drive_link
 * Add new members from CSV file to a team
+  https://drive.google.com/file/d/1v74w72FvsqOKvmeAf47N536kVI_WDlqa/view?usp=drive_link
 * Add a specific members to a private channel
-
+  https://drive.google.com/file/d/1-06vIt9X7PfFi0Ar99GjmBPspiVO1ysP/view?usp=drive_link
 ## Technologies Used
 ### APIs
 * **Microsoft Graph, Access Token, Azure App Permissions and Secrets**
