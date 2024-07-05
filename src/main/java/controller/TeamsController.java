@@ -19,12 +19,10 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 public class TeamsController {
 	
-	private static final Logger LOGGER = LogManager.getLogger(TeamsController.class);
+//	private static final Logger LOGGER = LogManager.getLogger(TeamsController.class);
 	
     @FXML
     private MenuItem ChannelsButton;
@@ -155,7 +153,7 @@ public class TeamsController {
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {
-        	LOGGER.log(null, "context", e.getMessage(), e);
+        	e.printStackTrace();
         }
 
     }
