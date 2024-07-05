@@ -4,9 +4,10 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.text.Font?>
 
+
 <DialogPane prefHeight="67.0" prefWidth="207.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <content>
-      <Label alignment="CENTER" prefHeight="64.0" prefWidth="215.0" text=" Finish successfully!" textFill="#bd1936">
+      <Label alignment="CENTER" prefHeight="64.0" prefWidth="215.0" text="Sync completely!" textFill="#bd1936">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
