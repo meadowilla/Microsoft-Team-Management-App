@@ -109,6 +109,7 @@ public class Verify {
         new TeamsController(validTenantId, validClientId, validClientSecret);
 
     }
+    
 
 
     @FXML

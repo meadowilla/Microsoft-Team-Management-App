@@ -13,7 +13,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Vertify.fxml")));
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Verify.fxml")));
 
             primaryStage.setTitle("Microsoft Team Management");
             primaryStage.setScene(new Scene(root, 600, 400));
